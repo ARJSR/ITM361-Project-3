@@ -11,10 +11,10 @@
 	
   var marker;
 
-  var map = new google.maps.Map(element, mapOptions);
+  var myMap = new google.maps.Map(element, mapOptions);
   
   marker = new google.maps.Marker({
-    map: map,
+    map: myMap,
     draggable: true,
     animation: google.maps.Animation.DROP,
     position: {lat: 41.692222, lng: -87.681459}
@@ -29,4 +29,4 @@
   }
   }; 
 }
- google.maps.event.addDomListener(windo, 'load', init);
+ google.maps.event.addDomListener(window, 'load', init);
