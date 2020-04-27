@@ -6,7 +6,7 @@
 	  zoom: 18,
 	  mapTypeId: google.maps.MapTypeId.SATELLITE,
 	  mapTypeControlOptions: {
-		postion: google.maps.ControlPosition.BOTTOM_CENTER}
+		position: google.maps.ControlPosition.BOTTOM_CENTER}
 	};
 	
   var marker;
@@ -27,6 +27,6 @@
   } else {
     marker.setAnimation(google.maps.Animation.BOUNCE);
   }
-  } 
+  }; 
 }
  google.maps.event.addDomListener(windo, 'load', init);
