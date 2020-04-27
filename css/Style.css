@@ -169,6 +169,10 @@
 	  padding: 20px;
   }
   
+  #mapbk {
+	  background-color: gray;
+  }
+  
   #wrapper {
 	  width: 850px;
 	  height: 600px;
