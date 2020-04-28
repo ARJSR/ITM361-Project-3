@@ -17,16 +17,28 @@
     map: myMap,
     draggable: true,
     animation: google.maps.Animation.DROP,
-    position: {lat: 41.692222, lng: -87.681459}
+    position: {lat: 41.692222, lng: -87.681459},
+	//title: 'House of God, Inc.'
   });
   
-  marker.addListener('click', toggleBounce);
-  function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-  }; 
-}
+  //var contentString = '<h1>House of God, Inc.</h1>';
+  
+  //var infowindow = new google.maps.InfoWindow({
+	//  content: contentString
+  //});
+  
+  //google.maps.event.addListener(marker, 'mousesover', function(){
+    //infowindow.open(myMap,marker);
+//});
+
+  //marker.addListener('click', toggleBounce);
+  //function toggleBounce() {
+  //if (marker.getAnimation() !== null) {
+   // marker.setAnimation(null);
+  //} else {
+    //marker.setAnimation(google.maps.Animation.BOUNCE);
+ // }
+}; 
+   
+
  google.maps.event.addDomListener(window, 'load', init);
